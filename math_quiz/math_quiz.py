@@ -33,7 +33,7 @@ def math_quiz():
     for _ in range(test_questions):
         num1 = get_random_integer(1, 10); num2 = get_random_integer(1, 5.5); operator = get_random_operator()
 
-        PROBLEM, ANSWER = calculate(num1, num2, operator)
+        PROBLEM, ANSWER = calculator(num1, num2, operator)
         print(f"\nQuestion: {PROBLEM}")
         
         try:
